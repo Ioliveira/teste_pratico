@@ -69,8 +69,8 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'root',
-		'database' => 'teste_pratico',
+		'password' => '',
+		'database' => 'agenda',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
