@@ -15,7 +15,8 @@ id int(10) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
 data_tarefa DATETIME NOT NULL,
 titulo varchar(30) NOT NULL,
 descricao varchar(150) NOT NULL,
-id_usuario int(10) NOT NULL) ENGINE = innodb;
+id_usuario int(10) unsigned NOT NULL,
+CONSTRAINT fk_usuario FOREIGN KEY(id_usuario) REFERENCES usuarios(id) ON DELETE CASCADE) ENGINE = innodb;
 
 
 

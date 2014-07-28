@@ -1,0 +1,38 @@
+2014-07-27 23:06:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_usuario' cannot be null
+Request URL: /teste_pratico/Tarefas/add
+Stack Trace:
+#0 C:\xampp\htdocs\teste_pratico\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\teste_pratico\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('INSERT INTO `ag...', Array)
+#2 C:\xampp\htdocs\teste_pratico\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `ag...')
+#3 C:\xampp\htdocs\teste_pratico\lib\Cake\Model\Model.php(1850): DboSource->create(Object(Tarefa), Array, Array)
+#4 C:\xampp\htdocs\teste_pratico\lib\Cake\Controller\Scaffold.php(242): Model->save(Array)
+#5 C:\xampp\htdocs\teste_pratico\lib\Cake\Controller\Scaffold.php(390): Scaffold->_scaffoldSave(Object(CakeRequest), 'add')
+#6 C:\xampp\htdocs\teste_pratico\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#7 C:\xampp\htdocs\teste_pratico\lib\Cake\Controller\Controller.php(535): Scaffold->__construct(Object(TarefasController), Object(CakeRequest))
+#8 C:\xampp\htdocs\teste_pratico\lib\Cake\Controller\Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#9 C:\xampp\htdocs\teste_pratico\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\teste_pratico\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(TarefasController), Object(CakeRequest))
+#11 C:\xampp\htdocs\teste_pratico\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-07-27 23:56:45 Error: [MissingActionException] Action AppController::View() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'View',
+)
+Request URL: /teste_pratico/app/View/Usuarios/default.ctp
+Stack Trace:
+#0 C:\xampp\htdocs\teste_pratico\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\teste_pratico\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 C:\xampp\htdocs\teste_pratico\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-07-28 03:09:15 Error: [MissingActionException] Action AppController::View() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'View',
+)
+Request URL: /teste_pratico/app/View/Layouts/error.ctp
+Stack Trace:
+#0 C:\xampp\htdocs\teste_pratico\lib\Cake\Routing\Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\teste_pratico\lib\Cake\Routing\Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 C:\xampp\htdocs\teste_pratico\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
